@@ -13,4 +13,4 @@
 
 # Screenshot Sito
 
-![screenshot ecommerce](assets/schermata.png)
+![screenshot ecommerce](assets/shermata.png)
