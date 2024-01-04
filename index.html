@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b68de36aab.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <title>Travelers</title>
+</head>
+
+<body class="container-fluid justify-content-center p-0">
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img alt="logo" src="/assets/logo.png" id="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offerte">Offerte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#w-summer">Welcome Summer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offerta-del-giorno">Offerta del Giorno</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- JUMBOTRON -->
+    <div class="container-fluid jumbotron text-light p-5 w-100 mt-5">
+        <div class="col-auto d-flex flex-column justify-content-center gap-4">
+            <h1>Travelers</h1>
+            <h3>Esplora il Mondo con Noi: Viaggi Straordinari a Portata di Click!</h3>
+            <span>Scopri destinazioni uniche, crea ricordi indelebili e abbraccia l'avventura in ogni viaggio.</span>
+            <div class="col-auto">
+
+                <div class="row d-flex flex-row w-100 justify-content-start">
+
+                    <a href="#offerte" class="col-auto">
+                        <button type="button" class="btn btn-light text-light" id="btn-jumbo">
+                            Esplora ora
+                        </button>
+                    </a>
+
+                    <a href="#" class="col-auto">
+
+                        <button type="button" class="btn btn-light text-light" id="removeCard" onclick="removeCard()">
+                            Rimuovi card
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- OFFERTE LAST-MINUTE -->
+    <div class="container-fluid my-5 p-3 p-md-4 p-lg-5">
+        <div class="row text-center my-5 w-100 justify-content-center position-relative">
+            <div class="col">
+                <h2>Offerte Last-Minute</h2>
+            </div>
+            <div class="col-auto position-absolute top-0 end-0">
+                <i class="fa-solid fa-angle-up p-2 text-black" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#last-minute" aria-expanded="false" aria-controls="offerte"
+                    onclick="rotateIcon(event)"></i>
+            </div>
+        </div>
+
+
+        <div class="row collapse show g-2 g-sm-3" id="last-minute">
+            <!-- Card Last Minute -->
+
+            <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                <div class="card text-bg-dark border  shadow">
+                    <img src="https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img" alt="...">
+                    <div class="card-img-overlay  d-flex flex-column justify-content-between align-items-center">
+                      <h5 class="card-title">Bali</h5>
+                      <a href="#" class="btn btn-light w-50">Scopri</a>
+                    </div>
+                  </div>
+            </div>
+            
+            
+            <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                <div class="card text-bg-dark border shadow">
+                    <img src="https://images.pexels.com/photos/2070485/pexels-photo-2070485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img" alt="...">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between align-items-center">
+                      <h5 class="card-title">Thailandia</h5>
+                      <a href="#" class="btn btn-light w-50">Scopri</a>
+                    </div>
+                  </div>
+            </div>
+            
+            
+            <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                <div class="card text-bg-dark border shadow">
+                    <img src="https://images.pexels.com/photos/3889891/pexels-photo-3889891.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img" alt="...">
+                    <div class="card-img-overlay text-dark d-flex flex-column justify-content-between align-items-center">
+                      <h5 class="card-title">Egitto</h5>
+                      <a href="#" class="btn btn-light w-50">Scopri</a>
+                    </div>
+                  </div>
+            </div>
+
+
+
+            <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                <div class="card text-bg-dark border shadow">
+                    <img src="https://images.pexels.com/photos/819764/pexels-photo-819764.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img" alt="...">
+                    <div class="card-img-overlay text-dark d-flex flex-column justify-content-between align-items-center">
+                      <h5 class="card-title">Barcellona</h5>
+                      <a href="#" class="btn btn-light w-50">Scopri</a>
+                    </div>
+                  </div>
+            </div>
+            
+            
+            
+            <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                <div class="card text-bg-dark border">
+                    <img src="https://images.pexels.com/photos/10809056/pexels-photo-10809056.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img" alt="...">
+                    <div class="card-img-overlay text-dark d-flex flex-column justify-content-between align-items-center">
+                      <h5 class="card-title">Bucarest</h5>
+                      <a href="#" class="btn btn-light w-50">Scopri</a>
+                    </div>
+                  </div>
+            </div>
+            
+            
+            <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                <div class="card text-bg-dark border">
+                    <img src="https://images.pexels.com/photos/16789397/pexels-photo-16789397/free-photo-of-citta-punto-di-riferimento-strada-edificio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img" alt="...">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between align-items-center">
+                      <h5 class="card-title">Tokio</h5>
+                      <a href="#" class="btn btn-light w-50">Scopri</a>
+                    </div>
+                  </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- OFFERTE DELLA SETTIMANA -->
+    <div class="container-fluid my-5 mx-0 d-flex flex-column align-items-center">
+
+        <div class="row text-center my-5 w-100 justify-content-center position-relative">
+            <div class="col">
+                <h2>Offerte della settimana</h2>
+            </div>
+            <div class="col-auto position-absolute top-0 end-0">
+                <i class="fa-solid fa-angle-up p-2 text-black" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#offerte" aria-expanded="false" aria-controls="offerte"
+                    onclick="rotateIcon(event)"></i>
+            </div>
+        </div>
+
+
+        <div class="collapse show" id="offerte">
+
+
+            <div class="container-xxl row text-center g-3">
+
+                <!-- Card Offerte della settimana -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card w-100" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/258117/pexels-photo-258117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Londra</h5>
+                            <p class="card-text">Esplora la maestosa Londra, una città che fonde storia e modernità in
+                                modo unico.</p>
+                            <a href="#" class="btn btn-primary">Visualizza</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card w-100" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Parigi</h5>
+                            <p class="card-text">Ammira la Torre Eiffel scintillante di notte, percorri gli
+                                Champs-Élysées, e visita Louvre. </p>
+                            <a href="#" class="btn btn-primary">Visualizza</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card w-100" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/1603650/pexels-photo-1603650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Delhi, DL, India</h5>
+                            <p class="card-text">Scopri la maestosità del Taj Mahal, percorri i vivaci mercati di Delhi
+                                e immergiti nella spiritualità.</p>
+                            <a href="#" class="btn btn-primary">Visualizza</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card w-100" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/1486222/pexels-photo-1486222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">New York</h5>
+                            <p class="card-text">La città che non dorme mai, New York, è un caleidoscopio di cultura,
+                                architettura e opportunità.</p>
+                            <a href="#" class="btn btn-primary">Visualizza</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- WELCOME SUMMER -->
+    <div class="container-fluid my-5 mx-0 d-flex flex-column align-items-center py-5 px-3 px-sm-3" id="w-summer">
+
+        <div class="row text-center my-3 text-light w-100 position-relative">
+            <div class="col">
+                <h2>Welcome Summer</h2>
+            </div>
+            <div class="col-auto position-absolute top-0 end-0">
+                <i class="fa-solid fa-angle-up p-2 text-black" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#welcomeSummer" aria-expanded="false" aria-controls="welcomeSummer"
+                    onclick="rotateIcon(event)"></i>
+            </div>
+        </div>
+
+        <div class="collapse show" id="welcomeSummer">
+
+
+            <div class="container-fluid row text-center g-2 collapse show py-5">
+
+                <!-- Card Welcome Summer -->
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card w-100 shadow" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/13636589/pexels-photo-13636589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sardegna</h5>
+                            <a href="#" class="btn btn-primary">Visualizza</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card w-100 shadow" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/19013662/pexels-photo-19013662/free-photo-of-oceano-estate-costa-cielo-azzurro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fuerteventura</h5>
+                            <a href="#" class="btn btn-primary">Visualizza</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card w-100 shadow" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/9482126/pexels-photo-9482126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Maldive</h5>
+                            <a href="#" class="btn btn-primary">Visualizza</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card w-100 shadow" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/8804731/pexels-photo-8804731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Zanzibar</h5>
+                            <a href="#" class="btn btn-primary">Visualizza</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card w-100 shadow" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/2521619/pexels-photo-2521619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hawaii</h5>
+                            <a href="#" class="btn btn-primary">Visualizza</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card w-100 shadow" style="width: 18rem;">
+                        <img src=https://images.pexels.com/photos/1072839/pexels-photo-1072839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Brasile</h5>
+                            <a href="#" class="btn btn-primary">Visualizza</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- OFFERTA DEL GIORNO -->
+    <div class="container col-10  my-5 d-none d-md-flex flex-row justify-content-center">
+        <div class="card container col-10 m-0 p-0 shadow">
+
+
+            <div class="container-fluid  w-100 rounded-3 bg-light p-4 position-relative">
+                <div class="row">
+                    <h2>Offerta del giorno</h2>
+                    <div class="col-auto position-absolute top-10 end-0">
+
+                        <i class="fa-solid fa-angle-up p-2 text-black" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#offerta-del-giorno" aria-expanded="false"
+                            aria-controls="offerta-del-giorno" onclick="rotateIcon(event)"></i>
+
+                    </div>
+                </div>
+                <div class="collapse show" id="offerta-del-giorno">
+                    <div class="row d-flex flex-column flex-xl-row ">
+
+
+                        <div class="col col-xl-8 mb-3 ">
+                            <video src="assets/production_id_4612067 (2160p).mp4" controls loop autoplay
+                                class="object-fit-contain" style="width: 100%; max-width: 1000px;"></video>
+                        </div>
+                        <div class="col-xl-4 col">
+                            <div class="col d-flex flex-column gap-3">
+                                <h2>Hawaii</h2>
+                                <span class="fst-italic">Date: 15/05/2024 - 25/05/2024</span>
+                                <span class="fw-medium">Prezzo: 2.500€ <span
+                                        class="text-decoration-line-through text-danger">3.200€</span></span>
+                                <p class="fw-light fs-6">Esplora il paradiso tropicale delle Hawaii con la nostra
+                                    irresistibile offerta di viaggio e alloggio!
+                                    <br>Abbandona la routine quotidiana e lasciati trasportare in un mondo di spiagge di
+                                    sabbia bianca,
+                                    <br>acque cristalline e paesaggi mozzafiato.
+
+                                    <br> Il nostro pacchetto esclusivo ti porterà in un viaggio indimenticabile
+                                    attraverso
+                                    le isole hawaiiane,
+                                    <br> offrendoti un'esperienza autentica e rilassante.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Testimonials -->
+    <div class="container-fluid bg-light p-4 my-5">
+        <div class="row text-center">
+            <div class="row">
+                <h2>Testimonials</h2>
+                <div class="col-auto position-absolute top-10 end-0">
+                    <i class="fa-solid fa-angle-up p-2 text-black" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#testimonials" aria-expanded="false" aria-controls="testimonials"
+                        onclick="rotateIcon(event)"></i>
+                </div>
+            </div>
+            <div class="collapse show" id="testimonials">
+
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+
+                            <div
+                                class="container-fluid row d-flex flex-column justify-content-center align-items-center p-5 mx-2 my-5 text-center">
+
+                                <div class="col-auto d-flex flex-column justify-content-center align-items-center">
+                                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="img-thumbnail rounded-circle  mx-auto d-block my-3" alt="...">
+
+                                    <h5>Ottimo Servizio!</h5>
+                                    <p class="w-50">"Abbiamo scelto Travelers per la nostra avventura nella vivace Tokyo
+                                        <br>e siamo rimasti estremamente soddisfatti.<br> L'agenzia ha creato un
+                                        pacchetto
+                                        personalizzato
+                                        che ha soddisfatto tutte le nostre esigenze, garantendo un equilibrio perfetto
+                                        tra cultura locale e modernità."
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+
+                            <div
+                                class="container-fluid row d-flex flex-column justify-content-center align-items-center p-5 mx-2 my-5 text-center">
+
+                                <div class="col-auto d-flex flex-column justify-content-center align-items-center">
+
+                                    <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="img-thumbnail rounded-circle  mx-auto d-block my-3" alt="...">
+                                    <h5>Più che soddisfatta!</h5>
+                                    <p class="w-50">"Grazie a Travelers, abbiamo vissuto un'esperienza senza stress
+                                        nell'affascinante Città del Messico. Dalla prenotazione dei voli alle escursioni
+                                        ben organizzate, l'agenzia si è dimostrata affidabile in ogni aspetto. Il
+                                        personale esperto e cordiale ha contribuito a creare un'atmosfera accogliente,
+                                        trasformando la nostra vacanza in una scoperta continua di bellezze culturali e
+                                        gastronomiche."</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+
+                            <div
+                                class="container-fluid row d-flex flex-column justify-content-center align-items-center p-5 mx-2 my-5 text-center">
+
+                                <div class="col-auto d-flex flex-column justify-content-center align-items-center">
+
+                                    <img src="https://images.pexels.com/photos/819530/pexels-photo-819530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="img-thumbnail rounded-circle  mx-auto d-block my-3" alt="...">
+                                    <h5>Un viaggio da rifare!</h5>
+                                    <p class="w-50">"Il nostro viaggio con Travelers alla magnifica Barcellona è stato
+                                        eccezionale! Dalla prenotazione dei voli all'alloggio nel cuore della città,
+                                        l'agenzia ha superato le nostre aspettative. Il personale attento e
+                                        professionale ha reso la nostra esperienza indimenticabile. Raccomandiamo
+                                        caldamente Travelers per un servizio di viaggio di alta qualità."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer
+        class="container-fluid row bg-dark px-2 py-4 text-light d-flex flex-column flex-sm-row justify-content-around text-center m-0 align-items-center h-100 g-3 g-sm-1">
+        <div class="col-2 col-md-2">
+            <img src="assets/logo.png" alt="logo" class="logo-footer">
+        </div>
+        <div class="col-6 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+            <span> <small>Siamo un'agenzia dedicata a trasformare le tue vacanze in avventure indimenticabili. Con un
+                    team appassionato e competente, offriamo servizi di viaggio su misura, curati nei minimi dettagli.
+                </small></span>
+        </div>
+        <div class="col-2 d-flex flex-column align-items-center">
+            <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalContact">Contattaci</a>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalContact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modulo contatti Travelers!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Inserisci la tua email per essere ricontattato</p>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

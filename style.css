@@ -1,0 +1,59 @@
+body {
+    font-family: 'Montserrat';
+}
+
+
+
+.jumbotron {
+    background-image: url(https://images.pexels.com/photos/1167021/pexels-photo-1167021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.54);
+    background-blend-mode: darken;
+    height: 600px;
+}
+
+#w-summer {
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+i{
+    /* background-color: grey; */
+    border: solid rgb(169, 169, 169) 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+i:hover{
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(105, 105, 105) 2px;
+    
+}
+
+
+#logo {
+    width: 50px;
+}
+
+#btn-jumbo, #removeCard {
+    background: rgb(224, 188, 110);
+    background: linear-gradient(155deg, rgba(224, 188, 110, 1) 7%, rgba(62, 142, 143, 1) 100%);
+}
+
+
+.img-thumbnail{
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.logo-footer {
+    max-width: 90px;
+    width: 100%;
+    min-width: 50px;
+}
+
+footer {
+    height: 200px;
+}
